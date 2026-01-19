@@ -23,7 +23,7 @@ export default function LoveMessage() {
         className="max-w-4xl w-full relative"
       >
         {/* The Glassmorphic Card */}
-        <div className="bg-white/40 backdrop-blur-xl border border-white/60 p-12 md:p-20 rounded-[3rem] shadow-[0_30px_100px_rgba(251,113,133,0.12)] text-center relative overflow-hidden group">
+        <div className="bg-white/40 backdrop-blur-xl border border-rose-300 p-12 md:p-20 rounded-[3rem] shadow-[0_30px_100px_rgba(251,113,133,0.12)] text-center relative overflow-hidden group">
           
           {/* Animated Gradient Border Bloom */}
           <div className="absolute inset-0 border-2 border-transparent bg-gradient-to-r from-rose-100/0 via-rose-200/50 to-rose-100/0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none" />

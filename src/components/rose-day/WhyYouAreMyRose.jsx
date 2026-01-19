@@ -44,7 +44,7 @@ export default function WhyYouAreMyRose() {
                 y: -8,
                 boxShadow: "0 20px 40px rgba(251, 113, 133, 0.08)" 
               }}
-              className="group bg-white p-8 rounded-[2rem] border border-rose-50 shadow-sm transition-all flex items-center gap-6"
+              className="group bg-white p-8 rounded-[2rem] border border-rose-50 !shadow-xl transition-all flex items-center gap-6"
             >
               {/* Animated Icon Container */}
               <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-rose-50 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
