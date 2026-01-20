@@ -44,7 +44,7 @@ export default function WhyIChooseYou() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.8 }}
               whileHover={{ scale: 1.02 }}
-              className={`group p-8 rounded-[2.5rem] border border-rose-50 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all duration-500 flex flex-col items-center text-center ${item.color}`}
+              className={`group p-8 rounded-[2.5rem] border border-rose-200 bg-gradient-to-b from-white to-pink-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all duration-500 flex flex-col items-center text-center ${item.color}`}
             >
               {/* Icon with a soft background pulse */}
               <div className="mb-6 relative">
@@ -59,8 +59,8 @@ export default function WhyIChooseYou() {
               </div>
 
               <p 
-                style={{ fontFamily: "'Zeyada', cursive" }} 
-                className="text-3xl md:text-4xl text-slate-700 leading-tight group-hover:text-rose-900 transition-colors"
+                // style={{ fontFamily: "'Zeyada', cursive" }} 
+                className="font-serif italic text-xl md:text-2xl text-slate-700 leading-tight group-hover:text-rose-900 transition-colors"
               >
                 {item.text}
               </p>

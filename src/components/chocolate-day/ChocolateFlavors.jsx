@@ -80,7 +80,7 @@ export default function ChocolateFlavors() {
                 y: -10,
                 transition: { duration: 0.2 }
               }}
-              className={`${item.color} p-8 rounded-[2rem] border-2 border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col items-center text-center group`}
+              className={`${item.color} p-8 rounded-[2rem] border-2 border-rose-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col items-center text-center group`}
             >
               <div className="bg-white p-4 rounded-full text-pink-400 shadow-sm mb-6 group-hover:scale-110 transition-transform">
                 {item.icon}

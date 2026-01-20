@@ -24,7 +24,7 @@ export default function LoveNote() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="relative bg-[#fffdfa] border border-rose-100 rounded-[2.5rem] shadow-[0_20px_60px_rgba(244,63,94,0.05)] max-w-2xl p-10 md:p-16 text-center"
+        className="relative bg-gradient-to-b from-pink-50 to-pink-100 border border-rose-200 rounded-[2.5rem] shadow-[0_20px_60px_rgba(244,63,94,0.05)] max-w-2xl p-10 md:p-16 text-center"
       >
         {/* The "Wax Seal" / Heart Header */}
         <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-rose-500 w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-4 border-white">

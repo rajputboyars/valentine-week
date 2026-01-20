@@ -55,7 +55,7 @@ export default function RoseTypes() {
             {/* The Glow Aura behind the rose */}
             <div className={`absolute -top-10 left-1/2 -translate-x-1/2 w-32 h-32 ${rose.aura} rounded-full blur-[60px] opacity-20 group-hover:opacity-40 transition-opacity duration-500`} />
 
-            <div className="bg-white/60 backdrop-blur-md border border-rose-200 rounded-[3rem] p-10 text-center shadow-[0_15px_40px_rgba(0,0,0,0.02)] h-full flex flex-col items-center">
+            <div className="bg-gradient-to-b from-white to-pink-100 backdrop-blur-md border border-rose-200 rounded-[3rem] p-10 text-center shadow-[0_15px_40px_rgba(0,0,0,0.02)] h-full flex flex-col items-center">
               
               <motion.div 
                 animate={{ y: [0, -8, 0] }}

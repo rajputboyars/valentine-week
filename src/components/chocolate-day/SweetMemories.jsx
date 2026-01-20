@@ -1,12 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import { Camera, Heart, Music, MapPin } from "lucide-react";
+import Image from "next/image";
 
 const memories = [
-  { id: 1, title: "First Date", color: "from-rose-100 to-pink-200", icon: <Heart className="w-6 h-6" />, rotate: -3 },
-  { id: 2, title: "Our Favorite Cafe", color: "from-orange-100 to-rose-200", icon: <MapPin className="w-6 h-6" />, rotate: 2 },
-  { id: 3, title: "Late Night Talks", color: "from-purple-100 to-pink-200", icon: <Music className="w-6 h-6" />, rotate: -2 },
-  { id: 4, title: "Special Moments", color: "from-pink-100 to-rose-200", icon: <Camera className="w-6 h-6" />, rotate: 4 },
+  { id: 1, title: "First Date", color: "from-rose-100 to-pink-200", icon: <Heart className="w-6 h-6" />, rotate: -3 , imgSrc: "WhatsApp1.jpeg"},
+  { id: 2, title: "Our Favorite Cafe", color: "from-orange-100 to-rose-200", icon: <MapPin className="w-6 h-6" />, rotate: 2, imgSrc: "WhatsApp2.jpeg" },
+  { id: 3, title: "Late Night Talks", color: "from-purple-100 to-pink-200", icon: <Music className="w-6 h-6" />, rotate: -2, imgSrc: "WhatsApp3.jpeg" },
+  { id: 4, title: "Special Moments", color: "from-pink-100 to-rose-200", icon: <Camera className="w-6 h-6" />, rotate: 4, imgSrc: "WhatsApp4.jpeg" },
 ];
 
 export default function SweetMemories() {
@@ -43,11 +44,11 @@ export default function SweetMemories() {
               className="bg-white p-4 pb-10 shadow-xl border border-rose-50 rounded-sm hover:shadow-2xl transition-shadow cursor-pointer"
             >
               {/* Image Placeholder */}
-              <div className={`w-full h-48 rounded-sm bg-gradient-to-br ${memory.color} flex flex-col items-center justify-center text-rose-400/60 relative overflow-hidden group`}>
+              <div className={`w-full h-60 rounded-sm bg-gradient-to-br  flex flex-col items-center justify-center text-rose-400/60 relative overflow-hidden group`}>
                 {/* Glossy overlay effect */}
-                <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
-                {memory.icon}
+                {/* <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" /> */}
+                <Image src={`/images/${memory.imgSrc}`} alt={memory.title} width={200} height={200} className="w-full h-full object-cover rounded-sm z-10" />
+                {/* {memory.icon} */}
                 <span className="text-xs mt-2 font-medium tracking-tighter uppercase opacity-50">Memory {memory.id}</span>
               </div>
 

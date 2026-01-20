@@ -69,7 +69,7 @@ export default function Timeline() {
               {/* The Content Card */}
               <motion.div
                 whileHover={{ y: -5 }}
-                className="w-full md:w-5/12 ml-16 md:ml-0 bg-white p-8 rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-rose-50 group transition-all"
+                className="w-full md:w-5/12 ml-16 md:ml-0 bg-gradient-to-b from-pink-100 to-white  p-8 rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-rose-200 group transition-all"
               >
                 <p 
                   style={{ fontFamily: "'Quicksand', sans-serif" }}

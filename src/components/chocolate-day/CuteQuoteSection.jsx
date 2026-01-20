@@ -33,7 +33,7 @@ export default function CuteQuoteSection() {
         viewport={{ once: true }}
         className="max-w-2xl mx-auto px-6"
       >
-        <div className="relative bg-white/70 backdrop-blur-sm border border-rose-100 p-12 rounded-[3rem] shadow-[0_20px_50px_rgba(244,63,94,0.1)] text-center">
+        <div className="relative bg-gradient-to-b from-pink-50 to-pink-100 backdrop-blur-sm border border-rose-300 p-12 rounded-[3rem] shadow-[0_20px_50px_rgba(244,63,94,0.1)] text-center">
           
           {/* Decorative Icon */}
           <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-rose-500 p-3 rounded-2xl shadow-lg rotate-12">

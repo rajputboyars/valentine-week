@@ -58,9 +58,9 @@ export default function WhyYouAreSweeter() {
               className="relative group"
             >
               {/* The "Candy Heart" Shape */}
-              <div className="bg-white p-10 rounded-[2.5rem] rounded-tr-none shadow-[0_15px_40px_rgba(244,63,94,0.08)] border border-rose-50 flex items-center justify-center min-h-[160px] relative overflow-hidden">
+              <div className="bg-gradient-to-b from-pink-100 to-pink-50 p-10 rounded-[2.5rem] shadow-[0_15px_40px_rgba(244,63,94,0.08)] border border-rose-200 flex items-center justify-center min-h-[160px] relative overflow-hidden">
                 {/* Subtle internal glow */}
-                <div className="absolute top-0 left-0 w-2 h-full bg-rose-200" />
+                {/* <div className="absolute top-0 left-0 w-2 h-full bg-rose-200" /> */}
                 
                 <p className="font-[Dancing_Script] text-3xl text-rose-900 text-center leading-tight px-4 z-10">
                   {reason}
