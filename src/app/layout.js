@@ -1,7 +1,7 @@
 
-import { Pacifico, Poppins } from "next/font/google";
 
 import "./globals.css";
+import HeartCursor from "../components/LoveTrail";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,9 +11,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-
-      >
+      <body      >
+        <HeartCursor />
         {children}
       </body>
     </html>
