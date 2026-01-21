@@ -43,7 +43,7 @@ export default function PromiseCards() {
               y: -5,
               boxShadow: "0 20px 25px -5px rgba(244, 63, 94, 0.1)" 
             }}
-            className="group bg-white p-8 rounded-[2rem] border border-rose-50 shadow-sm flex items-start gap-6 transition-all"
+            className="group bg-gradient-to-b from-pink-50 to-white p-8 rounded-[2rem] border border-rose-300 shadow-sm flex items-start gap-6 transition-all"
           >
             {/* Animated Check/Icon Container */}
             <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center group-hover:scale-110 transition-transform">

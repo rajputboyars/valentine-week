@@ -89,7 +89,7 @@ export default function TeddyHero() {
           Sending you a giant hug in spirit 💖
         </p>
 
-        <div className="max-w-md mx-auto p-6 bg-white/60 backdrop-blur-sm rounded-3xl border border-rose-100 shadow-sm">
+        <div className="max-w-md mx-auto p-6 bg-gradient-to-b from-white to-pink-100 backdrop-blur-sm rounded-3xl border border-rose-300 shadow-sm">
           <p className="text-rose-900/70 font-medium leading-relaxed italic">
             "This teddy is soft, warm, and carries a piece of my heart. Whenever you need a hug, just know I'm right there."
           </p>

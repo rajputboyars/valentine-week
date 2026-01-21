@@ -24,7 +24,7 @@ export default function ComfortMessage() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="relative z-10 max-w-2xl w-full bg-white/80 backdrop-blur-xl border border-white rounded-[3rem] p-10 md:p-16 shadow-[20px_20px_60px_#bebebe,-20px_-20px_60px_#ffffff] text-center"
+        className="relative z-10 max-w-2xl w-full bg-gradient-to-b from-pink-50 to-pink-100 backdrop-blur-xl border border-rose-300 rounded-[3rem] p-10 md:p-16 shadow-[20px_20px_60px_#bebebe,-20px_-20px_60px_#ffffff] text-center"
       >
         <motion.div
           animate={{ y: [0, -8, 0] }}

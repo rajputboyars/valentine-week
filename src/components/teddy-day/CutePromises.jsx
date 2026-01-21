@@ -43,7 +43,7 @@ export default function CutePromises() {
               viewport={{ once: true }}
               transition={{ delay: item.delay, duration: 0.6 }}
               whileHover={{ y: -10 }}
-              className="group relative bg-white p-8 rounded-[3rem] shadow-[0_15px_40px_rgba(251,113,133,0.1)] border-2 border-transparent hover:border-rose-100 transition-all duration-500"
+              className="group relative bg-gradient-to-b from-white to-pink-100 p-8 rounded-3xl shadow-[0_15px_40px_rgba(251,113,133,0.1)] border border-rose-300 hover:border-rose-100 transition-all duration-500"
             >
               {/* Peek-a-boo Teddy Icon */}
               <motion.div 

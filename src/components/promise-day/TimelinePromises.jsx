@@ -66,7 +66,7 @@ export default function TimelinePromises() {
                   <div className="w-full md:w-5/12 pl-16 md:pl-0">
                     <motion.div
                       whileHover={{ scale: 1.02, x: i % 2 === 0 ? -5 : 5 }}
-                      className="bg-white p-8 rounded-[2rem] shadow-[0_10px_30px_rgba(251,113,133,0.05)] border border-rose-50 relative group"
+                      className="bg-gradient-to-b from-white to-pink-100 p-8 rounded-[2rem] shadow-[0_10px_30px_rgba(251,113,133,0.05)] border border-rose-300 relative group"
                     >
                       <span className="md:hidden block text-[10px] font-bold uppercase tracking-widest text-rose-300 mb-2">
                         {item.time}

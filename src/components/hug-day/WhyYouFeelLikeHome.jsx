@@ -42,7 +42,7 @@ export default function WhyYouFeelLikeHome() {
                 scale: 1.03,
                 boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.05)"
               }}
-              className="bg-white p-6 md:p-8 rounded-lg shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] border-b-4 border-rose-100 relative group"
+              className="bg-gradient-to-b from-white to-pink-50 p-6 md:p-8 rounded-lg shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] border-b-4 border border-rose-200 border-b-rose-300  relative group"
             >
               {/* "Tape" Detail at the top */}
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-6 bg-rose-50/80 backdrop-blur-sm border border-white/50 rotate-1" />

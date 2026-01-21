@@ -55,7 +55,7 @@ export default function WhyThisWebsite() {
               {/* Reason Card */}
               <motion.div 
                 whileHover={{ x: 10 }}
-                className="flex-1 bg-white/50 backdrop-blur-sm p-6 rounded-[2rem] border border-rose-50 shadow-[0_10px_30px_rgba(244,63,94,0.03)] group-hover:shadow-[0_15px_35px_rgba(244,63,94,0.06)] transition-all"
+                className="flex-1 bg-gradient-to-b from-white to-pink-100 backdrop-blur-sm p-6 rounded-2xl border border-rose-200 shadow-[0_10px_30px_rgba(244,63,94,0.03)] group-hover:shadow-[0_15px_35px_rgba(244,63,94,0.06)] transition-all"
               >
                 <p className="font-serif italic text-lg md:text-xl text-rose-900/80 leading-relaxed">
                   "{item.text}"

@@ -27,7 +27,7 @@ export default function MessageFromTeddy() {
           // "Breathing" animation for the whole card
           animate={{ scale: [1, 1.02, 1] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-          className="bg-white p-12 md:p-16 rounded-[4rem] shadow-[0_25px_60px_rgba(251,113,133,0.08)] border border-rose-50 text-center relative"
+          className="bg-gradient-to-b from-white to-pink-100 p-12 md:p-16 rounded-[4rem] shadow-[0_25px_60px_rgba(251,113,133,0.08)] border border-rose-300 text-center relative"
         >
           {/* Heart Icon "Clip" */}
           <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-rose-500 text-white p-3 rounded-full shadow-lg">

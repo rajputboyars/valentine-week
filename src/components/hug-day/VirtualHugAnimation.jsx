@@ -70,7 +70,7 @@ export default function VirtualHugAnimation() {
         whileInView={{ opacity: 1, y: 0 }}
         className="mt-12 text-center"
       >
-        <p style={{ fontFamily: "'Zeyada', cursive" }} className="text-4xl text-rose-500">
+        <p  className=" font-['Kalam',cursive] text-4xl text-rose-500">
           Sending you all my warmth...
         </p>
         <p className="font-serif italic text-rose-300 text-sm tracking-widest uppercase mt-2">
