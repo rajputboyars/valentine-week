@@ -1,10 +1,17 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { ShieldCheck, Sparkles } from "lucide-react";
+import { ShieldCheck, Sparkles, Heart } from "lucide-react";
 
 export default function PromiseButton() {
   const [isSealed, setIsSealed] = useState(false);
+  const [explodedHearts, setExplodedHearts] = useState([]);
+
+  const handleSeal = () => {
+    setIsSealed(true);
+    // Create an array of 20 unique IDs to trigger the heart burst
+    setExplodedHearts(Array.from({ length: 24 }, (_, i) => i));
+  };
 
   return (
     <section className="py-32 text-center relative overflow-hidden">
@@ -12,8 +19,30 @@ export default function PromiseButton() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-rose-50 rounded-full blur-[100px] -z-10" />
 
       <div className="relative inline-block">
+        {/* HEART EXPLOSION LAYER */}
+        <AnimatePresence>
+          {isSealed && explodedHearts.map((id) => (
+            <motion.div
+              key={id}
+              initial={{ opacity: 1, scale: 0, x: 0, y: 0 }}
+              animate={{ 
+                opacity: [1, 1, 0], 
+                scale: [0, Math.random() * 1.5 + 0.5, 1],
+                // Random explosion directions
+                x: (Math.random() - 0.5) * 500, 
+                y: (Math.random() - 0.5) * 500,
+                rotate: Math.random() * 360
+              }}
+              transition={{ duration: 2, ease: "easeOut" }}
+              className="absolute left-1/2 top-1/2 text-rose-500 pointer-events-none z-0"
+            >
+              <Heart fill="currentColor" size={Math.random() * 24 + 12} />
+            </motion.div>
+          ))}
+        </AnimatePresence>
+
         <motion.button
-          onClick={() => setIsSealed(true)}
+          onClick={handleSeal}
           disabled={isSealed}
           whileHover={!isSealed ? { 
             scale: 1.05,
@@ -28,11 +57,13 @@ export default function PromiseButton() {
           style={{ fontFamily: "'Montserrat', sans-serif", letterSpacing: "1px" }}
         >
           {/* Shimmer Effect */}
-          <motion.div
-            animate={{ x: ['-100%', '200%'] }}
-            transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
-            className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12"
-          />
+          {!isSealed && (
+            <motion.div
+              animate={{ x: ['-100%', '200%'] }}
+              transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
+              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12"
+            />
+          )}
 
           <span className="flex items-center gap-3 relative z-10">
             {isSealed ? (
@@ -46,22 +77,22 @@ export default function PromiseButton() {
           </span>
         </motion.button>
 
-        {/* Celebration Sparkles when clicked */}
+        {/* Small Sparkles for extra magic */}
         <AnimatePresence>
           {isSealed && (
             <div className="absolute inset-0 pointer-events-none">
-              {[...Array(8)].map((_, i) => (
+              {[...Array(12)].map((_, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ 
                     opacity: [0, 1, 0], 
                     scale: [0, 1.5, 0],
-                    x: (Math.random() - 0.5) * 200,
-                    y: (Math.random() - 0.5) * 200,
+                    x: (Math.random() - 0.5) * 300,
+                    y: (Math.random() - 0.5) * 300,
                   }}
-                  transition={{ duration: 1, delay: i * 0.1 }}
-                  className="absolute text-amber-400"
+                  transition={{ duration: 1.5, delay: i * 0.05 }}
+                  className="absolute text-amber-400 top-1/2 left-1/2"
                 >
                   <Sparkles fill="currentColor" size={20} />
                 </motion.div>
@@ -75,7 +106,7 @@ export default function PromiseButton() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
-        className="mt-8 px-6"
+        className="mt-12 px-6"
       >
         <p 
           style={{ fontFamily: "'Homemade Apple', cursive" }}
