@@ -16,22 +16,22 @@ export default function LoveLetter() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="max-w-4xl w-full bg-white p-12 md:p-20 rounded-sm shadow-[0_10px_60px_rgba(0,0,0,0.05)] border border-rose-50 relative"
+        className="max-w-4xl w-full bg-gradient-to-b from-white to-pink-100 p-12 md:p-20 rounded-xl shadow-[0_10px_60px_rgba(0,0,0,0.05)] border-2 border-rose-200 relative"
       >
         {/* The "Wax Seal" Detail */}
         <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-20">
           <motion.div
             whileHover={{ scale: 1.1, rotate: 5 }}
-            className="w-16 h-16 bg-rose-700 rounded-full flex items-center justify-center shadow-lg border-4 border-rose-800"
+            className="w-16 h-16 bg-rose-200 rounded-full flex items-center justify-center shadow-lg border-2 border-rose-300"
           >
-            <Heart size={28} fill="white" className="text-white" />
+            <Heart size={28} fill="red" className="text-red-500" />
           </motion.div>
         </div>
 
         {/* Letter Header */}
         <div className="flex justify-between items-center mb-12 opacity-40">
-          <MailOpen size={24} className="text-rose-300" />
-          <span className="font-serif italic text-rose-300 tracking-[0.2em] text-xs uppercase">
+          <MailOpen size={24} className="text-rose-600" />
+          <span className="font-serif italic !text-rose-600 tracking-[0.2em] text-xs uppercase">
             Jan 17, 2026
           </span>
         </div>
