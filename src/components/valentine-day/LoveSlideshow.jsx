@@ -2,13 +2,14 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Camera, Heart } from "lucide-react";
+import Image from "next/image";
 
 // You can add your actual image URLs here later
 const slides = [
-  { id: 1, content: "✨", label: "The Beginning", color: "bg-rose-50" },
-  { id: 2, content: "☕", label: "Late Night Talks", color: "bg-orange-50" },
-  { id: 3, content: "🌅", label: "Beautiful Sunsets", color: "bg-amber-50" },
-  { id: 4, content: "🥂", label: "Cheers to Us", color: "bg-pink-50" },
+  { id: 1, content: "✨", label: "The Beginning", color: "bg-rose-50" ,imgsrc: "WhatsApp1.jpeg"},
+  { id: 2, content: "☕", label: "Late Night Talks", color: "bg-orange-50" ,imgsrc: "WhatsApp2.jpeg"},
+  { id: 3, content: "🌅", label: "Beautiful Sunsets", color: "bg-amber-50" ,imgsrc: "WhatsApp3.jpeg"},
+  { id: 4, content: "🥂", label: "Cheers to Us", color: "bg-pink-50" ,imgsrc: "WhatsApp4.jpeg"},
 ];
 
 export default function LoveSlideshow() {
@@ -38,7 +39,7 @@ export default function LoveSlideshow() {
           </h2>
         </motion.div>
       {/* Background Heart Rain (Floating upwards like a dream) */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* <div className="absolute inset-0 pointer-events-none">
         {[...Array(12)].map((_, i) => (
           <motion.div
             key={i}
@@ -58,7 +59,7 @@ export default function LoveSlideshow() {
             <Heart size={Math.random() * 20 + 10} fill="currentColor" />
           </motion.div>
         ))}
-      </div>
+      </div> */}
 
         <div className="relative flex items-center justify-center h-[400px]">
           {/* Navigation Controls */}
@@ -85,16 +86,17 @@ export default function LoveSlideshow() {
                 animate={{ opacity: 1, scale: 1, x: 0, rotate: 0 }}
                 exit={{ opacity: 0, scale: 0.8, x: -100, rotate: -5 }}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className={`w-[280px] md:w-[400px] h-full ${slides[index].color} rounded-[2.5rem] shadow-[0_40px_80px_rgba(0,0,0,0.08)] border-8 border-white flex flex-col items-center justify-center overflow-hidden`}
+                className={`w-[280px] md:max-w-[400px] h-auto ${slides[index].color} rounded-[2.5rem] shadow-[0_40px_80px_rgba(0,0,0,0.08)] border-8 border-white flex flex-col items-center justify-center overflow-hidden`}
               >
                 {/* Image Placeholder Area */}
                 <div className="flex-1 flex items-center justify-center text-8xl group">
-                  <motion.span
+                  {/* <motion.span
                     animate={{ scale: [1, 1.1, 1] }}
                     transition={{ repeat: Infinity, duration: 4 }}
-                  >
-                    {slides[index].content}
-                  </motion.span>
+                  > */}
+                    {/* {slides[index].content} */}
+                    <Image src={`/images/${slides[index].imgsrc}`} alt={slides[index].label} width={280} height={200} className="h-[300px]" />
+                  {/* </motion.span> */}
                 </div>
                 
                 {/* Caption Bar */}
