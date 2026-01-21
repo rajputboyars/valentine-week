@@ -1,7 +1,7 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Camera } from "lucide-react";
+import { ChevronLeft, ChevronRight, Camera, Heart } from "lucide-react";
 
 // You can add your actual image URLs here later
 const slides = [
@@ -19,6 +19,7 @@ export default function LoveSlideshow() {
 
   return (
     <section className="py-24 px-6 bg-[#fffcfd] overflow-hidden">
+      
       <div className="max-w-4xl mx-auto">
         
         <motion.div 
@@ -36,6 +37,28 @@ export default function LoveSlideshow() {
             A Journey In <span className="text-rose-500 italic">Frames</span>
           </h2>
         </motion.div>
+      {/* Background Heart Rain (Floating upwards like a dream) */}
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(12)].map((_, i) => (
+          <motion.div
+            key={i}
+            initial={{ y: "110vh", x: `${Math.random() * 100}vw`, opacity: 0 }}
+            animate={{
+              y: "-10vh",
+              opacity: [0, 1, 1, 0],
+              rotate: 360
+            }}
+            transition={{
+              duration: 8 + Math.random() * 4,
+              repeat: Infinity,
+              delay: i * 0.5
+            }}
+            className="absolute text-rose-200"
+          >
+            <Heart size={Math.random() * 20 + 10} fill="currentColor" />
+          </motion.div>
+        ))}
+      </div>
 
         <div className="relative flex items-center justify-center h-[400px]">
           {/* Navigation Controls */}

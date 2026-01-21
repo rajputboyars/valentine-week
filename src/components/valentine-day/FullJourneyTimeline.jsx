@@ -1,7 +1,7 @@
 "use client";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { useRef } from "react";
-import { Sparkles, MessageSquare, Laugh, ShieldCheck, HeartPulse } from "lucide-react";
+import { Sparkles, MessageSquare, Laugh, ShieldCheck, HeartPulse, Heart } from "lucide-react";
 
 const journey = [
   { text: "The day we met", icon: <Sparkles />, color: "text-amber-400" },
@@ -26,6 +26,29 @@ export default function FullJourneyTimeline() {
 
   return (
     <section ref={containerRef} className="max-w-4xl mx-auto px-6 py-32 relative">
+      
+      {/* Background Heart Rain (Floating upwards like a dream) */}
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(12)].map((_, i) => (
+          <motion.div
+            key={i}
+            initial={{ y: "110vh", x: `${Math.random() * 100}vw`, opacity: 0 }}
+            animate={{
+              y: "-10vh",
+              opacity: [0, 1, 1, 0],
+              rotate: 360
+            }}
+            transition={{
+              duration: 8 + Math.random() * 4,
+              repeat: Infinity,
+              delay: i * 0.5
+            }}
+            className="absolute text-rose-200"
+          >
+            <Heart size={Math.random() * 20 + 10} fill="currentColor" />
+          </motion.div>
+        ))}
+      </div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -82,7 +105,7 @@ export default function FullJourneyTimeline() {
               <div className="w-full md:w-1/2 pl-20 md:pl-0 md:px-12">
                 <motion.div
                   whileHover={{ y: -5 }}
-                  className="bg-gradient-to-br from-pink-100 to-pink-100 backdrop-blur-sm p-8 rounded-[2rem] border border-rose-300 shadow-[0_10px_40px_rgba(0,0,0,0.02)] transition-all group"
+                  className="bg-gradient-to-b from-white to-pink-100 backdrop-blur-sm p-8 rounded-[2rem] border border-rose-300 shadow-[0_10px_40px_rgba(0,0,0,0.02)] transition-all group"
                 >
                   <p 
                     style={{ fontFamily: "'Montserrat', sans-serif" }}

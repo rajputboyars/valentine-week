@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { Heart } from "lucide-react";
 
 export default function SpecialMessage() {
   const sentence = {
@@ -20,6 +21,29 @@ export default function SpecialMessage() {
 
   return (
     <section className="py-24 relative flex justify-center items-center overflow-hidden">
+      
+      {/* Background Heart Rain (Floating upwards like a dream) */}
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(12)].map((_, i) => (
+          <motion.div
+            key={i}
+            initial={{ y: "110vh", x: `${Math.random() * 100}vw`, opacity: 0 }}
+            animate={{
+              y: "-10vh",
+              opacity: [0, 1, 1, 0],
+              rotate: 360
+            }}
+            transition={{
+              duration: 8 + Math.random() * 4,
+              repeat: Infinity,
+              delay: i * 0.5
+            }}
+            className="absolute text-rose-200"
+          >
+            <Heart size={Math.random() * 20 + 10} fill="currentColor" />
+          </motion.div>
+        ))}
+      </div>
       {/* Decorative Wax Seal background element */}
       <div className="absolute opacity-[0.03] pointer-events-none select-none">
         <span className="text-[20rem]">💌</span>

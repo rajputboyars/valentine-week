@@ -1,13 +1,36 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { Sparkles } from "lucide-react";
+import { Heart, Sparkles } from "lucide-react";
 
 export default function ProposalAgainButton() {
   const [isAccepted, setIsAccepted] = useState(false);
 
   return (
     <section className="relative text-center pb-32 pt-12 overflow-hidden">
+      
+      {/* Background Heart Rain (Floating upwards like a dream) */}
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(12)].map((_, i) => (
+          <motion.div
+            key={i}
+            initial={{ y: "110vh", x: `${Math.random() * 100}vw`, opacity: 0 }}
+            animate={{
+              y: "-10vh",
+              opacity: [0, 1, 1, 0],
+              rotate: 360
+            }}
+            transition={{
+              duration: 8 + Math.random() * 4,
+              repeat: Infinity,
+              delay: i * 0.5
+            }}
+            className="absolute text-rose-200"
+          >
+            <Heart size={Math.random() * 20 + 10} fill="currentColor" />
+          </motion.div>
+        ))}
+      </div>
       <AnimatePresence>
         {!isAccepted ? (
           <motion.div

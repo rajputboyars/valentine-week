@@ -8,7 +8,7 @@ import ProposalAgainButton from "../../components/valentine-day/ProposalAgainBut
 
 export default function ValentineDayPage() {
   return (
-    <main className="bg-pink-50 min-h-screen overflow-hidden">
+    <main className=" min-h-screen overflow-hidden">
       <FinalHero />
       <CountdownTimer />
       <FullJourneyTimeline />
