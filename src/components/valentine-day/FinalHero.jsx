@@ -5,22 +5,22 @@ import { Heart, Sparkles } from "lucide-react";
 export default function FinalHero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 bg-[#fffcfc] overflow-hidden">
-      
+
       {/* Background Heart Rain (Floating upwards like a dream) */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(12)].map((_, i) => (
           <motion.div
             key={i}
             initial={{ y: "110vh", x: `${Math.random() * 100}vw`, opacity: 0 }}
-            animate={{ 
-              y: "-10vh", 
+            animate={{
+              y: "-10vh",
               opacity: [0, 1, 1, 0],
-              rotate: 360 
+              rotate: 360
             }}
-            transition={{ 
-              duration: 8 + Math.random() * 4, 
-              repeat: Infinity, 
-              delay: i * 0.5 
+            transition={{
+              duration: 8 + Math.random() * 4,
+              repeat: Infinity,
+              delay: i * 0.5
             }}
             className="absolute text-rose-200"
           >
@@ -56,16 +56,14 @@ export default function FinalHero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
-        className="z-10"
+        style={{ fontFamily: "'Petit Formal Script', cursive" }}
+        className="text-5xl md:text-7xl text-rose-800 mb-6 drop-shadow-sm"
       >
-        <h1 
-          // style={{ fontFamily: "'Unbounded'" }}
-          className="text-4xl md:text-7xl font-black text-rose-600 tracking-tighter font-serif italic capitalize"
-        >
+        <h1>
           Happy <br className="md:hidden" /> Valentine’s Day
         </h1>
 
-        <motion.div 
+        <motion.div
           initial={{ width: 0 }}
           animate={{ width: "100px" }}
           transition={{ delay: 1.5, duration: 1 }}
@@ -95,9 +93,9 @@ export default function FinalHero() {
         ))}
       </div>
 
-      {/* Font Imports */}
+      {/* Font Import */}
       <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&family=Meow+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
       `}</style>
     </section>
   );

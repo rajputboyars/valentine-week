@@ -10,7 +10,7 @@ const notes = [
 
 export default function LoveNotes() {
   return (
-    <section className="max-w-5xl mx-auto px-6 py-24 bg-[#fffafb] rounded-[3rem]">
+    <section className="max-w-5xl mx-auto px-6 py-24 bg-[#fffafb] border border-rose-300 rounded-[3rem] bg-gradient-to-b from-rose-200 to-rose-100">
       <header className="text-center mb-16">
         <motion.h2 
           initial={{ opacity: 0 }}
@@ -38,7 +38,7 @@ export default function LoveNotes() {
               zIndex: 10,
               boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)"
             }}
-            className={`${note.color} p-8 rounded-sm shadow-sm relative group cursor-pointer border-t-[30px] border-black/5`}
+            className={`${note.color} p-8 rounded-sm shadow-sm relative group cursor-pointer border-t-[30px] border-t-black/5 border border-rose-200`}
           >
             {/* The "Push Pin" Detail */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-4 h-4 bg-rose-400 rounded-full shadow-inner border-2 border-white/50" />

@@ -30,7 +30,7 @@ export default function SpecialMessage() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
-        className="max-w-4xl mx-auto text-center px-8 py-16 bg-white/40 backdrop-blur-sm rounded-[3rem] border border-rose-100/50 shadow-[0_20px_50px_rgba(251,113,133,0.05)]"
+        className="max-w-4xl mx-auto text-center px-8 py-16 bg-gradient-to-b from-pink-100 to-pink-50 backdrop-blur-sm rounded-[3rem] border-2 border-rose-300 shadow-[0_20px_50px_rgba(251,113,133,0.05)]"
       >
         <motion.div
           variants={sentence}

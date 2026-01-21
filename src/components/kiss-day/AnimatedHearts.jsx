@@ -55,7 +55,7 @@ export default function AnimatedHearts() {
       <div className="absolute inset-0 flex items-center justify-center">
         <p 
           style={{ fontFamily: "'Pangolin', cursive" }}
-          className="text-rose-400 text-sm tracking-widest uppercase bg-white/50 px-4 py-1 rounded-full backdrop-blur-sm border border-rose-50"
+          className="text-rose-400 text-sm tracking-widest uppercase bg-white/50 px-4 py-1 rounded-full backdrop-blur-sm border border-rose-300"
         >
           Floating on Cloud Nine
         </p>

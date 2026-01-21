@@ -53,7 +53,7 @@ export default function CuteBlushAnimation() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="relative bg-white p-8 rounded-[2.5rem] shadow-[0_20px_50px_rgba(244,63,94,0.15)] border-2 border-rose-50"
+          className="relative bg-white p-8 rounded-[2.5rem] shadow-[0_20px_50px_rgba(244,63,94,0.15)] border-2 border-rose-200"
         >
           <div className="flex gap-2">
             <Heart className="text-rose-400 fill-rose-400" size={48} />

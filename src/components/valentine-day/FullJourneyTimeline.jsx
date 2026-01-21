@@ -38,6 +38,7 @@ export default function FullJourneyTimeline() {
           Through the years
         </h2>
         <h3 
+
           style={{ fontFamily: "'Homemade Apple', cursive" }}
           className="text-4xl md:text-5xl text-slate-800"
         >
@@ -81,7 +82,7 @@ export default function FullJourneyTimeline() {
               <div className="w-full md:w-1/2 pl-20 md:pl-0 md:px-12">
                 <motion.div
                   whileHover={{ y: -5 }}
-                  className="bg-white/40 backdrop-blur-sm p-8 rounded-[2rem] border border-rose-50 shadow-[0_10px_40px_rgba(0,0,0,0.02)] transition-all group"
+                  className="bg-gradient-to-br from-pink-100 to-pink-100 backdrop-blur-sm p-8 rounded-[2rem] border border-rose-300 shadow-[0_10px_40px_rgba(0,0,0,0.02)] transition-all group"
                 >
                   <p 
                     style={{ fontFamily: "'Montserrat', sans-serif" }}

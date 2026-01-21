@@ -53,7 +53,7 @@ export default function WhyIAdoreYou() {
             }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.02 }}
-            className="group relative bg-white/70 backdrop-blur-md p-8 rounded-[2rem] shadow-[0_10px_40px_rgba(251,113,133,0.1)] border border-white flex items-center gap-6"
+            className="group relative bg-gradient-to-br from-rose-100 to-rose-200 backdrop-blur-md p-8 rounded-[2rem] shadow-[0_10px_40px_rgba(251,113,133,0.1)] border-2 border-white flex items-center gap-6"
           >
             {/* Soft Icon Circle */}
             <div className="flex-shrink-0 w-12 h-12 bg-rose-50 rounded-2xl flex items-center justify-center transition-colors group-hover:bg-rose-100">

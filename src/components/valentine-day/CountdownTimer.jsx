@@ -39,7 +39,7 @@ export default function CountdownTimer() {
         key={value}
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className="bg-white/80 backdrop-blur-md border border-rose-100 w-20 h-20 md:w-24 md:h-24 rounded-2xl shadow-[0_10px_30px_rgba(251,113,133,0.1)] flex items-center justify-center mb-3"
+        className="bg-white/80 backdrop-blur-md border border-rose-300 w-20 h-20 md:w-24 md:h-24 rounded-2xl shadow-[0_10px_30px_rgba(251,113,133,0.1)] flex items-center justify-center mb-3"
       >
         <span 
           style={{ fontFamily: "'Space Grotesk', sans-serif" }}
