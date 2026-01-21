@@ -4,7 +4,7 @@ import { Heart, Sparkles } from "lucide-react";
 
 export default function KissHero() {
   return (
-    <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-[#fffcfc]">
+    <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden ">
       
       {/* Soft Romantic Aura */}
       <motion.div
