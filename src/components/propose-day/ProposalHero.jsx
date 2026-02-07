@@ -96,7 +96,15 @@ export default function ProposalHero() {
         transition={{ delay: 2 }}
         className="mt-12 text-rose-300 font-['Mrs_Saint_Delafield'] text-4xl"
       >
-        Yours, Always
+        Yours, Always 
+      </motion.div>
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2 }}
+        className="mt-12 text-rose-600 font-serif italic  text-4xl"
+      >
+        Anubhav Chaturvedi
       </motion.div>
 
       {/* Font Import */}
