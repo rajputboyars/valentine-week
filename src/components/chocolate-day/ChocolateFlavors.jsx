@@ -62,6 +62,9 @@ export default function ChocolateFlavors() {
           <h2 className="text-4xl md:text-5xl font-serif text-rose-900 mt-2">
             My Favorite Flavors ✨
           </h2>
+          <h2 className="text-xl md:text-2xl font-serif text-rose-900 mt-2">
+            by Anubhav Chaturvedi
+          </h2>
           <div className="w-24 h-1 bg-pink-200 mx-auto mt-4 rounded-full" />
         </header>
 
