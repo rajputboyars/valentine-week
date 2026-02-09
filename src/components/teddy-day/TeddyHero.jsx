@@ -86,7 +86,7 @@ export default function TeddyHero() {
           style={{ fontFamily: "'Gochi Hand', cursive" }}
           className="text-2xl md:text-3xl text-rose-400 mb-8"
         >
-          Sending you a giant hug in spirit 💖
+          Anubhav sending you a giant hug in spirit 💖
         </p>
 
         <div className="max-w-md mx-auto p-6 bg-gradient-to-b from-white to-pink-100 backdrop-blur-sm rounded-3xl border border-rose-300 shadow-sm">

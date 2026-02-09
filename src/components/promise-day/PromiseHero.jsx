@@ -69,7 +69,7 @@ export default function PromiseHero() {
         </div>
 
         <p className="font-sans text-rose-500 max-w-xl mx-auto text-lg md:text-xl leading-relaxed tracking-wide italic">
-          Today I promise you my heart, my time, and my forever— <br />
+          Today Anubhav promise you my heart, my time, and my forever— <br />
           <span className="font-bold text-rose-700 not-italic uppercase text-sm tracking-[0.3em]">sealed for eternity 🤍</span>
         </p>
       </motion.div>

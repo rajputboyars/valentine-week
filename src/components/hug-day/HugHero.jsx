@@ -51,7 +51,7 @@ export default function HugHero() {
         className="max-w-md"
       >
         <p className="text-xl md:text-2xl text-rose-400 font-medium leading-relaxed">
-          Sending you a warm, digital squeeze... <br />
+          Anubhav Sending you a warm, digital squeeze... <br />
           <span className="text-rose-500 font-bold italic">my favorite safe place 💞</span>
         </p>
       </motion.div>
