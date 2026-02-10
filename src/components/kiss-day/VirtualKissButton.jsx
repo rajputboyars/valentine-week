@@ -51,7 +51,7 @@ export default function VirtualKissButton() {
           />
           
           <LipIcon size={28} />
-          <span className="relative z-10">Send a Sweet Kiss</span>
+          <span className="relative z-10">Anubhav Send a Sweet Kiss</span>
         </motion.button>
 
         {/* The Kiss Burst Particles */}
